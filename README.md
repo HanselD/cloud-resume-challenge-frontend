@@ -4,9 +4,9 @@ TODO
 - [x] Certification
 - [ ] HTML
 - [ ] CSS
-- [ ] Static S3 Website
-- [ ] HTTPS
-- [ ] DNS
+- [x] Static S3 Website
+- [x] HTTPS
+- [x] DNS
 - [ ] JavaScript
 - [ ] DynamoDB
 - [ ] APIGW
