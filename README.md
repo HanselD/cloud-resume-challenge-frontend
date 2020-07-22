@@ -2,8 +2,8 @@
 
 TODO
 - [x] Certification
-- [ ] HTML
-- [ ] CSS
+- [x] HTML
+- [x] CSS
 - [x] Static S3 Website
 - [x] HTTPS
 - [x] DNS
