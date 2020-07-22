@@ -33,7 +33,21 @@
                     }
                 ]
             }
+        },
+        
+        "lambdaFunction": {
+          "Type": "AWS::Lambda::Function",
+          "Properties": {
+            "CodeUri":"code/",
+            "Handler": "",
+            "Role": "",
+            "Runtime": "",
+            "FunctionName": "",
+            "MemorySize": 128,
+            "Timeout": 5            
+          }
         }
+        
     },
     "Outputs": {}
 }
