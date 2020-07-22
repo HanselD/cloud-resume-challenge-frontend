@@ -1,0 +1,39 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "CFN stack for the backend of my resume. Takes care of all resources for the visitor count on the website",
+    "Transform": "AWS::Serverless-2016-10-31",
+    "Parameters": {
+        "ApplicationName": {
+            "Description": "Name of the application, will be used for tags",
+            "Type": "String",
+            "Default": "Resume-backend"
+        }
+    },
+    "Resources": {
+        "dynamodbTable": {
+            "Type": "AWS::Serverless::SimpleTable",
+            "Properties": {
+                "TableName": {
+                    "Fn::Join": [
+                        "-",
+                        [
+                            {
+                                "Ref": "ApplicationName"
+                            },
+                            "Table"
+                        ]
+                    ]
+                },
+                "Tags": [
+                    {
+                        "Key": "Name",
+                        "Value": {
+                            "Ref": "ApplicationName"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Outputs": {}
+}
