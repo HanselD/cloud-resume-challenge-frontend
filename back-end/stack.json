@@ -39,15 +39,54 @@
           "Type": "AWS::Lambda::Function",
           "Properties": {
             "CodeUri":"code/",
-            "Handler": "",
-            "Role": "",
-            "Runtime": "",
-            "FunctionName": "",
+            "Handler": "app.lambda_handler",
+            "Role": 
+            { "Ref": "LambdaRole" }
+            ,
+            "Runtime": "python3.8",
+            "FunctionName": 
+            {
+                "Fn::Join": [
+                    "-",
+                    [
+                        {
+                            "Ref": "ApplicationName"
+                        },
+                        "Lambda"
+                    ]
+                ]
+            }
+            ,
             "MemorySize": 128,
-            "Timeout": 5            
+            "Timeout": 5,
+            "Events": {
+                "VisitorCount": {
+                   "Type": "Api",
+                   "Properties": {
+                      "Path": "/count",
+                      "Method": "post" 
+                   }
+                }
+             }         
           }
+        },
+        
+        "lambdaRole": {
+           "Type": "AWS::IAM::Role",
+           "Properties": {
+              "AssumeRolePolicyDocument": {  },
+              "Path": "",
+              "Policies": [ "AWSLambdaDynamoDBExecutionRole" ]
+           }
         }
         
+        
     },
-    "Outputs": {}
+    "Outputs": {
+        
+        "VisitorCountAPI" : {
+          "Value" : {"Fn::Sub" : "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/count/"}
+        }
+        
+    }
 }
