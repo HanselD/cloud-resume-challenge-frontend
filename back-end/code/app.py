@@ -1,9 +1,10 @@
 import boto3
 import json
+import os
 
 # initialize boto3 resources
 dynamo = boto3.resource('dynamodb')
-table = dynamo.Table('test')
+table = dynamo.Table(os.environ['tablename'])
 
 def lambda_handler(event, context):
     #get current value from ddb
