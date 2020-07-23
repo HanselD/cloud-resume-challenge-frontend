@@ -10,8 +10,8 @@ TODO
 - [ ] JavaScript
 - [ ] DynamoDB
 - [ ] APIGW
-- [ ] Python
-- [ ] Tests
+- [x] Python
+- [x] Tests
 - [ ] IaC
 - [x] Source Control
 - [ ] CI/CD - FrontEnd
