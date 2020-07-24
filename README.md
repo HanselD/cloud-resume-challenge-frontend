@@ -7,14 +7,14 @@ TODO
 - [x] Static S3 Website
 - [x] HTTPS
 - [x] DNS
-- [ ] JavaScript
+- [x] JavaScript
 - [x] DynamoDB
 - [x] APIGW
 - [x] Python
 - [x] Tests
-- [ ] IaC
+- [x] IaC
 - [x] Source Control
 - [x] CI/CD - FrontEnd
-- [ ] CI/CD - Backend
-- [ ] Blog post
+- [x] CI/CD - Backend
+- [x] Blog post
 
