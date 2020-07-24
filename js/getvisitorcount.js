@@ -3,6 +3,6 @@ $.ajax({
     method: 'POST',
     contentType: 'application/json',
     success: function(response) {
-        $('#count').append(response.message)
+        $('#count').append(response.count)
     }   
   });
