@@ -4,6 +4,7 @@ on:
     paths:
     - '**.html'
     - '**.css'
+    - '**.js'
 jobs:
   build:
     runs-on: ubuntu-latest
