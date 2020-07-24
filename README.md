@@ -8,13 +8,13 @@ TODO
 - [x] HTTPS
 - [x] DNS
 - [ ] JavaScript
-- [ ] DynamoDB
-- [ ] APIGW
+- [x] DynamoDB
+- [x] APIGW
 - [x] Python
 - [x] Tests
 - [ ] IaC
 - [x] Source Control
-- [ ] CI/CD - FrontEnd
+- [x] CI/CD - FrontEnd
 - [ ] CI/CD - Backend
 - [ ] Blog post
 
