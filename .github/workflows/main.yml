@@ -1,10 +1,10 @@
 name: CI
 on:
   push:
-    paths:
-    - '**.html'
-    - '**.css'
-    - '**.js'
+    # paths:
+    # - '**.html'
+    # - '**.css'
+    # - '**.js'
 jobs:
   build:
     runs-on: ubuntu-latest
