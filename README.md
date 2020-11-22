@@ -1,8 +1,5 @@
 # Cloud Resume Challenge Frontend
 
-
-## Overview
-
 This project was a result of a challenge introduced by AWS Serverless Hero, Forrest Brazeal. The challenge was to use the AWS cloud to host your resume online. See details [here](https://cloudresumechallenge.dev/).
 
 It was built with HTML and CSS (Bulma framework). The visitor count function is written in JavaScript and increments the count of visitors stored in a DynamoDB table. For backend code, visit [Cloud Resume Backend](https://github.com/HanselD/cloud-resume-challenge-backend).
