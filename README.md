@@ -1,6 +1,5 @@
 # Cloud Resume Challenge Frontend
 
----
 
 ## Overview
 
@@ -10,7 +9,6 @@ It was built with HTML and CSS (Bulma framework). The visitor count function is 
 
 A Github Actions pipeline tracks changes in the repo and pushes them to the S3 bucket. It also invalidates the Cloudfront cache to ensure the viewer is served the latest version always.
 
----
 
 ## Architecture
 
@@ -41,4 +39,3 @@ TODO
 - [x] CI/CD - FrontEnd
 - [x] CI/CD - Backend
 - [x] Blog post
-
